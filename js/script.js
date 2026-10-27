@@ -85,6 +85,6 @@ function openWhatsApp() {
   const message = "Hi Radiance Luxury Salon! 👋\n\nI would like to book an appointment.\n\nPlease select the service you are interested in:\n1. Hair & Styling\n2. Skin & Facials\n3. Bridal & Makeup\n4. Nails & Spa\n\n(Please reply with the number of your choice)";
   
   // encodeURIComponent handles all spaces and line breaks perfectly
-  const url = "https://wa.me/918328394084?text=" + encodeURIComponent(message);
+  const url = "https://wa.me/9121130618?text=" + encodeURIComponent(message);
   window.open(url, '_blank');
 }
