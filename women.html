@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Women's Styling - Radiance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- FLOATING SALON ACCESSORIES BACKGROUND -->
+  <div class="salon-background-elements">
+    <!-- Using relevant salon images -->
+    <img src="https://images.unsplash.com/photo-1599305090598-fe179d501227?q=80&w=400&auto=format&fit=crop" alt="Scissors" class="float-item item-1">
+    <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=400&auto=format&fit=crop" alt="Makeup Brush" class="float-item item-2">
+    <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?q=80&w=400&auto=format&fit=crop" alt="Comb" class="float-item item-3">
+    <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?q=80&w=400&auto=format&fit=crop" alt="Nail Polish" class="float-item item-4">
+    <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=400&auto=format&fit=crop" alt="Razor" class="float-item item-5">
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="navbar">
+    <div class="logo">Radiance</div>
+    <nav>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="men.html">Men's Menu</a></li>
+        <li><a href="women.html" style="color: #D4AF37; font-weight: bold;">Women's Menu</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">☰</button>
+  </header>
+
+  <!-- WOMEN'S MENU SECTION -->
+  <section id="services" class="services" style="padding-top: 150px;">
+    <h2 class="luxury-3d-title">
+  <span>S</span><span>t</span><span>y</span><span>l</span><span>i</span><span>n</span><span>g</span>
+  <span class="space">&nbsp;</span>
+  <span>F</span><span>o</span><span>r</span>
+  <span class="space">&nbsp;</span>
+  <span>W</span><span>o</span><span>m</span><span>e</span><span>n</span>
+</h2>
+    <p class="menu-intro">Indulge in our carefully curated treatments, designed to enhance your natural radiance.</p>
+              <!-- IMAGE BANNER -->
+    <div class="section-banner reveal">
+            <div class="image-wrapper">
+        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=800&auto=format&fit=crop" alt="Women's Hair Styling" class="img-1">
+      </div>
+      <div class="image-wrapper">
+        <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=800&auto=format&fit=crop" alt="Salon Makeup" class="img-2">
+      </div>
+      <div class="image-wrapper">
+        <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?q=80&w=800&auto=format&fit=crop" alt="Salon Interior" class="img-3">
+      </div>
+    </div>
+    <!-- WOMEN'S MENU BUTTONS -->
+    <div class="menu-tabs">
+      <button class="tab-btn active" onclick="openMenu(event, 'threading')">Threading</button>
+      <button class="tab-btn" onclick="openMenu(event, 'waxing')">Waxing & De-Tan</button>
+      <button class="tab-btn" onclick="openMenu(event, 'facials')">Facials</button>
+      <button class="tab-btn" onclick="openMenu(event, 'nails')">Nails & Piercing</button>
+      <button class="tab-btn" onclick="openMenu(event, 'hair')">Hair Care</button>
+      <button class="tab-btn" onclick="openMenu(event, 'makeup')">Makeup & Mehndi</button>
+      <button class="tab-btn" onclick="openMenu(event, 'packages')">Packages</button>
+    </div>
+
+    <!-- WOMEN'S MENU CONTENT -->
+    <div class="menu-content">
+      
+      <!-- 1. THREADING -->
+      <div id="threading" class="menu-list active">
+        <div class="menu-item"><span class="service-name">Eyebrows</span><span class="service-price">₹30</span></div>
+        <div class="menu-item"><span class="service-name">Upper Lip / Lower Lip</span><span class="service-price">₹40</span></div>
+        <div class="menu-item"><span class="service-name">Forehead / Chin</span><span class="service-price">₹40</span></div>
+        <div class="menu-item"><span class="service-name">Face Sides</span><span class="service-price">₹100</span></div>
+        <div class="menu-item"><span class="service-name">Full Face</span><span class="service-price">₹200</span></div>
+      </div>
+
+      <!-- 2. WAXING & DE-TAN -->
+      <div id="waxing" class="menu-list">
+        <h3 class="sub-heading">Flavoured / Cartridge Waxing</h3>
+        <div class="menu-item"><span class="service-name">Half Arms / Legs</span><span class="service-price">₹350 / ₹550</span></div>
+        <div class="menu-item"><span class="service-name">Face</span><span class="service-price">₹500</span></div>
+        <div class="menu-item"><span class="service-name">Full Arms / Legs</span><span class="service-price">₹550 / ₹850</span></div>
+        <div class="menu-item"><span class="service-name">Midriff / Full Back</span><span class="service-price">₹800 / ₹1200</span></div>
+        <div class="menu-item"><span class="service-name">Full Waxing (FA+FL+UA)</span><span class="service-price">₹1500</span></div>
+        <div class="menu-item"><span class="service-name">Full Body</span><span class="service-price">₹2500</span></div>
+
+        <h3 class="sub-heading" style="margin-top: 30px;">Peel Off</h3>
+        <div class="menu-item"><span class="service-name">Upper Lip / Chin</span><span class="service-price">₹100</span></div>
+        <div class="menu-item"><span class="service-name">Underarms</span><span class="service-price">₹200</span></div>
+        <div class="menu-item"><span class="service-name">Face</span><span class="service-price">₹500</span></div>
+        <div class="menu-item"><span class="service-name">Bikini Line / Full Bikini</span><span class="service-price">₹1000 / ₹2000</span></div>
+
+        <h3 class="sub-heading" style="margin-top: 30px;">De-Tan</h3>
+        <div class="menu-item"><span class="service-name">Under Arms / Feet</span><span class="service-price">₹200 / ₹300</span></div>
+        <div class="menu-item"><span class="service-name">Face / Face, Neck</span><span class="service-price">₹500 / ₹700</span></div>
+        <div class="menu-item"><span class="service-name">Half Arms / Legs</span><span class="service-price">₹450 / ₹550</span></div>
+        <div class="menu-item"><span class="service-name">Midriff / Back</span><span class="service-price">₹450 / ₹600</span></div>
+        <div class="menu-item"><span class="service-name">Full Arms / Legs</span><span class="service-price">₹600 / ₹900</span></div>
+        <div class="menu-item"><span class="service-name">Premium Face Neck</span><span class="service-price">₹600 / ₹1000</span></div>
+        <div class="menu-item"><span class="service-name">Premium (F,N,B)</span><span class="service-price">₹1200</span></div>
+        <div class="menu-item"><span class="service-name">Full Body</span><span class="service-price">₹2500</span></div>
+      </div>
+
+      <!-- 3. FACIALS -->
+      <div id="facials" class="menu-list">
+        <div class="menu-item"><span class="service-name">Fruit Glow</span><span class="service-price">₹850 / ₹500</span></div>
+        <div class="menu-item"><span class="service-name">Pearl</span><span class="service-price">₹800 / ₹1000</span></div>
+        <div class="menu-item"><span class="service-name">Rose</span><span class="service-price">₹1000 / ₹1200</span></div>
+        <div class="menu-item"><span class="service-name">Wine</span><span class="service-price">₹1500 / ₹2500</span></div>
+        <div class="menu-item"><span class="service-name">Gold</span><span class="service-price">₹2000</span></div>
+        <div class="menu-item"><span class="service-name">Whitening</span><span class="service-price">₹1000 / ₹1200</span></div>
+        <div class="menu-item"><span class="service-name">Anti-Ageing</span><span class="service-price">₹1500 / ₹2500</span></div>
+        <div class="menu-item"><span class="service-name">Hydra Facial</span><span class="service-price">₹2500</span></div>
+      </div>
+
+      <!-- 4. NAILS & PIERCING -->
+      <div id="nails" class="menu-list">
+        <div class="menu-item"><span class="service-name">Change of Nail Colour</span><span class="service-price">₹100</span></div>
+        <div class="menu-item"><span class="service-name">Cut, File & Polish</span><span class="service-price">₹200</span></div>
+        <div class="menu-item"><span class="service-name">Nail Art (Per Finger)</span><span class="service-price">₹50</span></div>
+        <div class="menu-item"><span class="service-name">Gel Polish (Per Hand / Both)</span><span class="service-price">₹500 / ₹800</span></div>
+        <div class="menu-item"><span class="service-name">Nail Extensions with Gel Polish</span><span class="service-price">₹1200 / ₹2200</span></div>
+        <div class="menu-item"><span class="service-name">Acrylic Extensions (Per Hand / Both)</span><span class="service-price">₹1300 / ₹2500</span></div>
+        <div class="menu-item"><span class="service-name">GumGel Extensions (Both Hands)</span><span class="service-price">₹3000</span></div>
+        <div class="menu-item"><span class="service-name">Ear Piercing (Both Ears)</span><span class="service-price">₹1200</span></div>
+        <div class="menu-item"><span class="service-name">Nose Piercing</span><span class="service-price">₹2500</span></div>
+      </div>
+
+      <!-- 5. HAIR CARE -->
+      <div id="hair" class="menu-list">
+        <h3 class="sub-heading">Hair Spa & Scalp Treatment</h3>
+        <div class="menu-item"><span class="service-name">Basic Hair Spa</span><span class="service-price">₹800</span></div>
+        <div class="menu-item"><span class="service-name">Advanced Hair Spa</span><span class="service-price">₹1500</span></div>
+        <div class="menu-item"><span class="service-name">Frizz Ease / Premium Hair Spa</span><span class="service-price">₹1600 / ₹3000</span></div>
+        <div class="menu-item"><span class="service-name">Head Massage (Includes Hair Wash)</span><span class="service-price">₹700</span></div>
+        <div class="menu-item"><span class="service-name">Dandruff / Hair Fall Control</span><span class="service-price">₹2000</span></div>
+        <div class="menu-item"><span class="service-name">Oil Scalp / Scalp Sense</span><span class="service-price">₹3500</span></div>
+
+        <h3 class="sub-heading" style="margin-top: 30px;">Cuts, Colors & Styling</h3>
+        <div class="menu-item"><span class="service-name">Hair Cut (Incl. Wash & Conditioning)</span><span class="service-price">₹500</span></div>
+        <div class="menu-item"><span class="service-name">Hair Wash / Deep Conditioning</span><span class="service-price">₹200 / ₹300</span></div>
+        <div class="menu-item"><span class="service-name">Blow Dry</span><span class="service-price">₹400</span></div>
+        <div class="menu-item"><span class="service-name">Highlights Per Streak</span><span class="service-price">₹250</span></div>
+        <div class="menu-item"><span class="service-name">Color Henna Starts From</span><span class="service-price">₹800 / ₹1100</span></div>
+        <div class="menu-item"><span class="service-name">Root Touch Up Ammonia Free</span><span class="service-price">₹2500 / ₹2800 / ₹3000</span></div>
+        <div class="menu-item"><span class="service-name">Global Fashion Colour</span><span class="service-price">₹2500 / ₹3000 / ₹3200</span></div>
+        <div class="menu-item"><span class="service-name">Highlights (Partial / Full)</span><span class="service-price">₹3000 / ₹3500</span></div>
+        <div class="menu-item"><span class="service-name">Balayage (Medium / Long)</span><span class="service-price">₹3500 / ₹5000</span></div>
+        
+        <h3 class="sub-heading" style="margin-top: 30px;">Smoothening & Styling</h3>
+        <div class="menu-item"><span class="service-name">Smoothening / Keratin Starts From</span><span class="service-price">₹4000</span></div>
+        <div class="menu-item"><span class="service-name">Straightening / Botox Starts From</span><span class="service-price">₹4000</span></div>
+        <div class="menu-item"><span class="service-name">Nano Plastia Starts From</span><span class="service-price">₹4000</span></div>
+        <div class="menu-item"><span class="service-name">Ironing / Crimping (Medium / Long)</span><span class="service-price">₹600 / ₹1000</span></div>
+        <div class="menu-item"><span class="service-name">Updo (Medium / Long)</span><span class="service-price">₹1200</span></div>
+        <div class="menu-item"><span class="service-name">Tongs (Depending on length)</span><span class="service-price">₹3500</span></div>
+      </div>
+
+      <!-- 6. MAKEUP & MEHNDI -->
+      <div id="makeup" class="menu-list">
+        <div class="menu-item"><span class="service-name">Trial Makeup</span><span class="service-price">₹2500</span></div>
+        <div class="menu-item"><span class="service-name">Party Make-up (Classic / Premium)</span><span class="service-price">₹2000 / ₹3000</span></div>
+        <div class="menu-item"><span class="service-name">Groom Make-up</span><span class="service-price">₹3000</span></div>
+        <div class="menu-item"><span class="service-name">Wedding/Reception (Classic)</span><span class="service-price">₹9500</span></div>
+        <div class="menu-item"><span class="service-name">Wedding/Reception (Premium)</span><span class="service-price">₹12000</span></div>
+        <div class="menu-item"><span class="service-name">Arabic Mehndi (Both Hands)</span><span class="service-price">₹1000</span></div>
+        <div class="menu-item"><span class="service-name">Bridal Mehndi (Both Hands)</span><span class="service-price">₹2000</span></div>
+      </div>
+
+      <!-- 7. PACKAGES -->
+      <div id="packages" class="menu-list">
+        <div class="menu-item package-card">
+          <span class="service-name">Premium Grooming Package<br><small style="font-size: 0.85rem; color: #777; font-family: 'Montserrat', sans-serif; letter-spacing: 0;">Full Arms Waxing + Face & Neck De-Tan + Threading</small></span>
+          <span class="service-price">₹1,499</span>
+        </div>
+        <div class="menu-item package-card">
+          <span class="service-name">Velvet Grooming Package<br><small style="font-size: 0.85rem; color: #777; font-family: 'Montserrat', sans-serif; letter-spacing: 0;">Pearl Facial + Half Legs Waxing + Threading</small></span>
+          <span class="service-price">₹1,599</span>
+        </div>
+        <div class="menu-item package-card">
+          <span class="service-name">Cut, Cleanse & Style Package<br><small style="font-size: 0.85rem; color: #777; font-family: 'Montserrat', sans-serif; letter-spacing: 0;">Whitening Facial + Hair Cut + Wash + Blow Dry</small></span>
+          <span class="service-price">₹1,799</span>
+        </div>
+        <div class="menu-item package-card">
+          <span class="service-name">Head-To-Toe Care Package<br><small style="font-size: 0.85rem; color: #777; font-family: 'Montserrat', sans-serif; letter-spacing: 0;">Manicure & Pedicure + Head Massage + Gel Polish</small></span>
+          <span class="service-price">₹2,199</span>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="tax-note">* Applicable taxes shall be charged extra on all above services.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Radiance Luxury Salon. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <!-- FLOATING SALON ACCESSORIES BACKGROUND -->
+  <div class="salon-background-elements">
+    <img src="https://images.unsplash.com/photo-1599305090598-fe179d501227?q=80&w=400&auto=format&fit=crop" alt="Scissors" class="float-item item-1">
+    <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=400&auto=format&fit=crop" alt="Makeup Brush" class="float-item item-2">
+    <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?q=80&w=400&auto=format&fit=crop" alt="Comb" class="float-item item-3">
+    <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?q=80&w=400&auto=format&fit=crop" alt="Nail Polish" class="float-item item-4">
+    <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=400&auto=format&fit=crop" alt="Razor" class="float-item item-5">
+  </div>
+</body>
+</html>
